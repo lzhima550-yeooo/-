@@ -1,0 +1,43 @@
+{
+  "pass": true,
+  "startedAt": "2026-04-06T15:28:18.633Z",
+  "elapsedMs": 27421,
+  "mode": "offline",
+  "apiBase": "http://127.0.0.1:8787",
+  "webBaseLocal": "http://127.0.0.1:5173",
+  "webBaseLan": "http://192.168.1.6:5173",
+  "checks": [
+    {
+      "name": "build",
+      "ok": true,
+      "skipped": true
+    },
+    {
+      "name": "api-up",
+      "ok": true,
+      "target": "http://127.0.0.1:8787/api/health"
+    },
+    {
+      "name": "web-up",
+      "ok": true,
+      "target": "http://127.0.0.1:5173"
+    },
+    {
+      "name": "verify-final-demo-offline",
+      "ok": true,
+      "code": 0
+    },
+    {
+      "name": "verify-comfyui",
+      "ok": true,
+      "skipped": true
+    }
+  ],
+  "warnings": [],
+  "nextActions": [
+    "Demo URL (local): http://127.0.0.1:5173",
+    "Demo URL (LAN): http://192.168.1.6:5173",
+    "Verification command: npm run verify:final-demo -- --mode offline --api-base http://127.0.0.1:8787"
+  ],
+  "finishedAt": "2026-04-06T15:28:46.061Z"
+}

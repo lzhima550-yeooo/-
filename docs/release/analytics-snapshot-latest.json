@@ -1,0 +1,1600 @@
+{
+  "exportedAt": "2026-04-06T13:44:22.981Z",
+  "apiBase": "http://127.0.0.1:8787",
+  "endpoint": "http://127.0.0.1:8787/api/analytics/export?days=7&limit=2000&taskLimit=100&taskOffset=0",
+  "snapshot": {
+    "generatedAt": "2026-04-06T13:44:22.954Z",
+    "query": {
+      "days": 7,
+      "limit": 2000,
+      "source": "",
+      "eventName": "",
+      "taskLimit": 100,
+      "taskOffset": 0,
+      "taskType": "",
+      "status": "",
+      "taskId": ""
+    },
+    "eventsSummary": {
+      "days": 7,
+      "total": 124,
+      "byName": [
+        {
+          "name": "identify_submit",
+          "count": 38
+        },
+        {
+          "name": "spirit_generate_submit",
+          "count": 35
+        },
+        {
+          "name": "chat_stream_done",
+          "count": 29
+        },
+        {
+          "name": "spirit_session_create",
+          "count": 8
+        },
+        {
+          "name": "spirit_draft_create",
+          "count": 7
+        },
+        {
+          "name": "spirit_draft_publish",
+          "count": 6
+        },
+        {
+          "name": "community_post_publish",
+          "count": 1
+        }
+      ],
+      "bySource": [
+        {
+          "source": "api",
+          "count": 124
+        }
+      ],
+      "generatedAt": "2026-04-06T13:44:22.075Z"
+    },
+    "taskLogs": {
+      "items": [
+        {
+          "id": "3d2904c9-4550-4c59-8984-7aee851dc9d1",
+          "taskType": "diagnosis_identify",
+          "taskId": "44d860e5-97fd-4615-bf31-95ad82cc942b",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 4096,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": [
+              "rule:type:昆虫",
+              "rule:confidence:0.50",
+              "rule:score:37"
+            ]
+          },
+          "createdAt": "2026-04-06T13:32:41.118Z"
+        },
+        {
+          "id": "b12e4e47-963b-41f1-99b3-4a25461e0994",
+          "taskType": "diagnosis_identify",
+          "taskId": "44d860e5-97fd-4615-bf31-95ad82cc942b",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-06T13:32:37.237Z"
+        },
+        {
+          "id": "8962c0c0-2b8c-4cba-85b5-39a1291badb3",
+          "taskType": "diagnosis_identify",
+          "taskId": "44d860e5-97fd-4615-bf31-95ad82cc942b",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-06T13:32:36.813Z"
+        },
+        {
+          "id": "e900e4bb-c5b5-4987-8c08-45d8ec8e9576",
+          "taskType": "diagnosis_identify",
+          "taskId": "44d860e5-97fd-4615-bf31-95ad82cc942b",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-06T13:32:36.788Z"
+        },
+        {
+          "id": "847f3141-68d0-4be1-a7f7-05617950f8f2",
+          "taskType": "diagnosis_identify",
+          "taskId": "44d860e5-97fd-4615-bf31-95ad82cc942b",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-06T13:32:36.738Z"
+        },
+        {
+          "id": "730d8a46-3e9f-4216-b1e9-c6bc1f500eb0",
+          "taskType": "diagnosis_identify",
+          "taskId": "2bf41b05-5cba-47a2-aec6-441df1cb9a12",
+          "status": "queued",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "400 status code (no body)",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-06T13:32:11.223Z"
+        },
+        {
+          "id": "e94e15ed-a0eb-447f-90bf-346cf51cb0d0",
+          "taskType": "diagnosis_identify",
+          "taskId": "2bf41b05-5cba-47a2-aec6-441df1cb9a12",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-06T13:32:09.706Z"
+        },
+        {
+          "id": "29100f1a-139d-4308-aaa2-e33036cdf1af",
+          "taskType": "diagnosis_identify",
+          "taskId": "2bf41b05-5cba-47a2-aec6-441df1cb9a12",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-06T13:32:09.667Z"
+        },
+        {
+          "id": "89fb4cdc-867c-427b-8749-faed6b7498d8",
+          "taskType": "diagnosis_identify",
+          "taskId": "2bf41b05-5cba-47a2-aec6-441df1cb9a12",
+          "status": "failed",
+          "attempt": 2,
+          "durationMs": 190,
+          "error": "400 status code (no body)",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-06T13:32:09.424Z"
+        },
+        {
+          "id": "89f84afe-6419-414b-a234-0f22845730ef",
+          "taskType": "diagnosis_identify",
+          "taskId": "2bf41b05-5cba-47a2-aec6-441df1cb9a12",
+          "status": "queued",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "400 status code (no body)",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-06T13:32:09.213Z"
+        },
+        {
+          "id": "fcc0a621-040a-42f6-888d-587a6579dc75",
+          "taskType": "diagnosis_identify",
+          "taskId": "2bf41b05-5cba-47a2-aec6-441df1cb9a12",
+          "status": "running",
+          "attempt": 2,
+          "durationMs": 0,
+          "error": "400 status code (no body)",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-06T13:32:09.199Z"
+        },
+        {
+          "id": "edd32e0b-14c3-49f7-a835-3d10ecbacb25",
+          "taskType": "diagnosis_identify",
+          "taskId": "2bf41b05-5cba-47a2-aec6-441df1cb9a12",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-06T13:32:08.627Z"
+        },
+        {
+          "id": "d96b78dc-e053-4538-a8dd-84ac1e7ea26c",
+          "taskType": "spirit_generation",
+          "taskId": "43db19c4-b1b0-4612-a044-1ec289d3b0d0",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 83649,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T21:02:02.899Z"
+        },
+        {
+          "id": "c95abc05-dc67-4e68-bf47-c65a9f6e575a",
+          "taskType": "spirit_generation",
+          "taskId": "43db19c4-b1b0-4612-a044-1ec289d3b0d0",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T21:00:38.825Z"
+        },
+        {
+          "id": "4c55a6ce-4b0d-493d-a7b5-53b02d74c578",
+          "taskType": "spirit_generation",
+          "taskId": "43db19c4-b1b0-4612-a044-1ec289d3b0d0",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T21:00:38.813Z"
+        },
+        {
+          "id": "806a53e0-f6f1-4ccd-8d26-5b79aa8198be",
+          "taskType": "diagnosis_identify",
+          "taskId": "f1788c44-7fa9-4911-8b6b-5d1c0b1a4c14",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 5734,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": [
+              "rule:type:昆虫",
+              "rule:confidence:0.85",
+              "rule:score:45"
+            ]
+          },
+          "createdAt": "2026-04-04T21:00:31.807Z"
+        },
+        {
+          "id": "c00d677d-9a8a-47b6-aacd-18231e326211",
+          "taskType": "diagnosis_identify",
+          "taskId": "f1788c44-7fa9-4911-8b6b-5d1c0b1a4c14",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T21:00:26.973Z"
+        },
+        {
+          "id": "6c1113fc-2bcd-43ca-9c08-6b9eee2d62c7",
+          "taskType": "diagnosis_identify",
+          "taskId": "f1788c44-7fa9-4911-8b6b-5d1c0b1a4c14",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T21:00:25.787Z"
+        },
+        {
+          "id": "1ec65fef-474d-4a77-a0a4-b234b4be569f",
+          "taskType": "diagnosis_identify",
+          "taskId": "f1788c44-7fa9-4911-8b6b-5d1c0b1a4c14",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T21:00:25.732Z"
+        },
+        {
+          "id": "cd4c0c57-b700-43e1-a7da-b0585c6f2674",
+          "taskType": "diagnosis_identify",
+          "taskId": "68f6f756-f745-4c29-a85f-a55aeaa378c3",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 5587,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": [
+              "rule:type:昆虫",
+              "rule:confidence:0.10",
+              "rule:score:37"
+            ]
+          },
+          "createdAt": "2026-04-04T21:00:25.250Z"
+        },
+        {
+          "id": "c8ae0c89-5ff5-4750-bef3-bddcad76410e",
+          "taskType": "diagnosis_identify",
+          "taskId": "68f6f756-f745-4c29-a85f-a55aeaa378c3",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T21:00:20.502Z"
+        },
+        {
+          "id": "759c93e4-24ae-4b46-873d-964ade94c75c",
+          "taskType": "diagnosis_identify",
+          "taskId": "68f6f756-f745-4c29-a85f-a55aeaa378c3",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T21:00:19.857Z"
+        },
+        {
+          "id": "da25f44d-1494-4b57-8af7-4e51ebd787e3",
+          "taskType": "diagnosis_identify",
+          "taskId": "68f6f756-f745-4c29-a85f-a55aeaa378c3",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T21:00:19.742Z"
+        },
+        {
+          "id": "09df0592-7b53-4df3-9cb8-5e572de681be",
+          "taskType": "diagnosis_identify",
+          "taskId": "68f6f756-f745-4c29-a85f-a55aeaa378c3",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T21:00:19.454Z"
+        },
+        {
+          "id": "04ef0962-fb8d-4d2c-b9be-31867ccccb76",
+          "taskType": "diagnosis_identify",
+          "taskId": "1138e91b-a7a7-4d35-a939-e462c97d25d4",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 6748,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": [
+              "rule:type:昆虫",
+              "rule:confidence:0.10",
+              "rule:score:37"
+            ]
+          },
+          "createdAt": "2026-04-04T21:00:13.647Z"
+        },
+        {
+          "id": "3d804638-0a96-487d-bebe-67d5057364fa",
+          "taskType": "diagnosis_identify",
+          "taskId": "1138e91b-a7a7-4d35-a939-e462c97d25d4",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T21:00:06.472Z"
+        },
+        {
+          "id": "73fd071a-9713-4b35-9571-98064d970e4d",
+          "taskType": "diagnosis_identify",
+          "taskId": "1138e91b-a7a7-4d35-a939-e462c97d25d4",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T21:00:06.387Z"
+        },
+        {
+          "id": "4a911ed9-9578-41c7-abb5-998cab33f4f2",
+          "taskType": "diagnosis_identify",
+          "taskId": "deac2fce-6e51-4ff0-8cdb-76df3fcdca44",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 5428,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": [
+              "rule:type:昆虫",
+              "rule:confidence:0.85",
+              "rule:score:45"
+            ]
+          },
+          "createdAt": "2026-04-04T20:57:04.337Z"
+        },
+        {
+          "id": "c83ba00e-9889-42ac-a480-34bc1c8cf139",
+          "taskType": "diagnosis_identify",
+          "taskId": "deac2fce-6e51-4ff0-8cdb-76df3fcdca44",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T20:56:59.294Z"
+        },
+        {
+          "id": "39dc0684-8e10-4694-a82c-62b44f2bf0ce",
+          "taskType": "diagnosis_identify",
+          "taskId": "deac2fce-6e51-4ff0-8cdb-76df3fcdca44",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T20:56:59.265Z"
+        },
+        {
+          "id": "69e58283-de65-4263-bace-8b7898f63508",
+          "taskType": "diagnosis_identify",
+          "taskId": "deac2fce-6e51-4ff0-8cdb-76df3fcdca44",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T20:56:59.122Z"
+        },
+        {
+          "id": "481c1107-fb3a-47c1-8381-df2236c03c29",
+          "taskType": "diagnosis_identify",
+          "taskId": "deac2fce-6e51-4ff0-8cdb-76df3fcdca44",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T20:56:59.108Z"
+        },
+        {
+          "id": "8e8868c4-f14d-4f84-9330-740254c5df73",
+          "taskType": "diagnosis_identify",
+          "taskId": "f7ba33e5-f63f-4de2-a918-b44e3f73d1bc",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 3248,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": [
+              "rule:type:昆虫",
+              "rule:confidence:0.50",
+              "rule:score:37"
+            ]
+          },
+          "createdAt": "2026-04-04T20:44:28.838Z"
+        },
+        {
+          "id": "34a28734-4bf3-468c-83b3-1163eb2529f4",
+          "taskType": "diagnosis_identify",
+          "taskId": "f7ba33e5-f63f-4de2-a918-b44e3f73d1bc",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T20:44:26.007Z"
+        },
+        {
+          "id": "ac1b11bd-6504-4065-b50e-2c09baf8e5c2",
+          "taskType": "diagnosis_identify",
+          "taskId": "f7ba33e5-f63f-4de2-a918-b44e3f73d1bc",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T20:44:25.836Z"
+        },
+        {
+          "id": "b695aa77-8d45-4a8a-94fe-f9771623d32e",
+          "taskType": "diagnosis_identify",
+          "taskId": "f7ba33e5-f63f-4de2-a918-b44e3f73d1bc",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T20:44:25.819Z"
+        },
+        {
+          "id": "bdd74308-aa00-423e-901f-d06815fa4bad",
+          "taskType": "diagnosis_identify",
+          "taskId": "f7ba33e5-f63f-4de2-a918-b44e3f73d1bc",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T20:44:25.759Z"
+        },
+        {
+          "id": "9a944e91-6762-4909-ba08-f588ad7a28a1",
+          "taskType": "spirit_generation",
+          "taskId": "48e5a4b8-d120-4218-af96-3999eba2f82d",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 95481,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T20:30:23.279Z"
+        },
+        {
+          "id": "da9e0226-8c82-4ac9-92cc-009cf8a4e78d",
+          "taskType": "spirit_generation",
+          "taskId": "48e5a4b8-d120-4218-af96-3999eba2f82d",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T20:28:47.680Z"
+        },
+        {
+          "id": "b2205e5e-e30e-44a5-8acd-464ce9a09a7c",
+          "taskType": "spirit_generation",
+          "taskId": "48e5a4b8-d120-4218-af96-3999eba2f82d",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T20:28:47.634Z"
+        },
+        {
+          "id": "501e02b3-4fe9-42a2-8f15-9b0e60f76ddb",
+          "taskType": "spirit_generation",
+          "taskId": "2d66916a-bc32-4372-b0ba-06752288a44a",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 83241,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:48:04.895Z"
+        },
+        {
+          "id": "902d8ccd-edcf-4182-9279-1e62ff1d172a",
+          "taskType": "spirit_generation",
+          "taskId": "2d66916a-bc32-4372-b0ba-06752288a44a",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:46:40.423Z"
+        },
+        {
+          "id": "e30421dd-1a88-4622-927b-29b260c7fa19",
+          "taskType": "spirit_generation",
+          "taskId": "2d66916a-bc32-4372-b0ba-06752288a44a",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:46:40.408Z"
+        },
+        {
+          "id": "5821aa71-6596-498c-9886-6dc4cfb92953",
+          "taskType": "diagnosis_identify",
+          "taskId": "bafc5dcf-825d-4ac8-89b1-8518eb539408",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 6638,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": [
+              "rule:type:昆虫",
+              "rule:confidence:0.90",
+              "rule:score:57"
+            ]
+          },
+          "createdAt": "2026-04-04T18:41:30.738Z"
+        },
+        {
+          "id": "c1d7d1b0-4664-4090-98db-4a0df7d04265",
+          "taskType": "diagnosis_identify",
+          "taskId": "bafc5dcf-825d-4ac8-89b1-8518eb539408",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:41:23.798Z"
+        },
+        {
+          "id": "c06cd05f-f8fa-4892-87cb-27f07095688c",
+          "taskType": "diagnosis_identify",
+          "taskId": "bafc5dcf-825d-4ac8-89b1-8518eb539408",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:41:23.728Z"
+        },
+        {
+          "id": "8004cdf5-fb98-4fa0-a4fa-5f6eda5500b5",
+          "taskType": "diagnosis_identify",
+          "taskId": "bafc5dcf-825d-4ac8-89b1-8518eb539408",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:41:23.696Z"
+        },
+        {
+          "id": "117242f8-7f5b-44f1-b3a5-daf240ab3e09",
+          "taskType": "diagnosis_identify",
+          "taskId": "bafc5dcf-825d-4ac8-89b1-8518eb539408",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:41:23.544Z"
+        },
+        {
+          "id": "919a16c1-e860-4d86-890c-446944b57f30",
+          "taskType": "spirit_generation",
+          "taskId": "a13effbe-2fee-4670-bee2-a576876f69c3",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 91046,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:33:58.992Z"
+        },
+        {
+          "id": "1ea7baaf-59f6-44e2-bff7-305a6fdf6f17",
+          "taskType": "spirit_generation",
+          "taskId": "a13effbe-2fee-4670-bee2-a576876f69c3",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:32:28.427Z"
+        },
+        {
+          "id": "3fe2c31b-0065-4025-ac9a-29ec4f88af64",
+          "taskType": "spirit_generation",
+          "taskId": "a13effbe-2fee-4670-bee2-a576876f69c3",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:32:27.430Z"
+        },
+        {
+          "id": "2d294e59-6b9a-4e75-b47d-1c8c5711e6fe",
+          "taskType": "diagnosis_identify",
+          "taskId": "f07801a5-be7f-463d-993a-50a074de466b",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 8022,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": [
+              "rule:type:昆虫",
+              "rule:confidence:0.85",
+              "rule:score:45"
+            ]
+          },
+          "createdAt": "2026-04-04T18:32:26.737Z"
+        },
+        {
+          "id": "0754fe3c-8828-4f4d-9c3e-60cc9a5dda92",
+          "taskType": "diagnosis_identify",
+          "taskId": "f07801a5-be7f-463d-993a-50a074de466b",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:32:19.622Z"
+        },
+        {
+          "id": "e7c05de4-fa5f-499a-bffc-5b2181f26f21",
+          "taskType": "diagnosis_identify",
+          "taskId": "f07801a5-be7f-463d-993a-50a074de466b",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:32:19.260Z"
+        },
+        {
+          "id": "e52bdea5-b887-47ad-88e8-dea84dd9ff52",
+          "taskType": "spirit_generation",
+          "taskId": "2b805ced-c789-46be-9d7d-8b1af84f0b04",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 67132,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:29:42.439Z"
+        },
+        {
+          "id": "8f0babe2-0017-43cf-b11a-f7962a4d9196",
+          "taskType": "spirit_generation",
+          "taskId": "2b805ced-c789-46be-9d7d-8b1af84f0b04",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:28:35.108Z"
+        },
+        {
+          "id": "800511f1-5ac2-413c-a7a4-720d11054758",
+          "taskType": "spirit_generation",
+          "taskId": "2b805ced-c789-46be-9d7d-8b1af84f0b04",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:28:34.501Z"
+        },
+        {
+          "id": "b4b55894-158e-4062-a2fd-89f9d1d7d2d6",
+          "taskType": "spirit_generation",
+          "taskId": "078c5c75-e464-47be-b6b9-624412960150",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 81519,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:28:18.343Z"
+        },
+        {
+          "id": "554559bf-b21c-4416-87ed-4977d63d2314",
+          "taskType": "spirit_generation",
+          "taskId": "078c5c75-e464-47be-b6b9-624412960150",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:26:55.438Z"
+        },
+        {
+          "id": "f73b7007-08e3-4fa4-887d-78447995b809",
+          "taskType": "spirit_generation",
+          "taskId": "078c5c75-e464-47be-b6b9-624412960150",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:26:55.365Z"
+        },
+        {
+          "id": "6af9ba35-7891-4a02-8c7e-5bb427a4e027",
+          "taskType": "diagnosis_identify",
+          "taskId": "33143289-a29b-434a-b96f-ab92e496b348",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 6802,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": [
+              "rule:type:昆虫",
+              "rule:confidence:0.10",
+              "rule:score:37"
+            ]
+          },
+          "createdAt": "2026-04-04T18:26:50.064Z"
+        },
+        {
+          "id": "3d7186c2-034c-4e4f-b4e2-d4d34c580ec8",
+          "taskType": "diagnosis_identify",
+          "taskId": "33143289-a29b-434a-b96f-ab92e496b348",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:26:42.298Z"
+        },
+        {
+          "id": "9d037938-7a94-4b14-8925-ea5b337611a3",
+          "taskType": "diagnosis_identify",
+          "taskId": "33143289-a29b-434a-b96f-ab92e496b348",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:26:42.166Z"
+        },
+        {
+          "id": "0952c818-0555-42c2-9757-435da777e65e",
+          "taskType": "diagnosis_identify",
+          "taskId": "33143289-a29b-434a-b96f-ab92e496b348",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:26:42.163Z"
+        },
+        {
+          "id": "8b83a6a2-5a80-40e9-a484-c9dba9fcbcd3",
+          "taskType": "diagnosis_identify",
+          "taskId": "33143289-a29b-434a-b96f-ab92e496b348",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:26:42.056Z"
+        },
+        {
+          "id": "bb5b384c-4665-43b9-93e3-d36e7e7bae9a",
+          "taskType": "diagnosis_identify",
+          "taskId": "d5100ac2-2e08-4e55-bb92-3feb81f99e18",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:25:44.799Z"
+        },
+        {
+          "id": "83d2f905-3f1a-4ae2-b972-1c9e3d078d67",
+          "taskType": "diagnosis_identify",
+          "taskId": "d5100ac2-2e08-4e55-bb92-3feb81f99e18",
+          "status": "queued",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "Connection error.",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:25:41.568Z"
+        },
+        {
+          "id": "43424e14-a459-4d70-8744-ed01eb99e55a",
+          "taskType": "spirit_generation",
+          "taskId": "f724999c-d42f-4370-8828-a450ed584671",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 96232,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:20:36.338Z"
+        },
+        {
+          "id": "d6f03bb1-4bbc-4467-adda-0ad5b04d48e5",
+          "taskType": "spirit_generation",
+          "taskId": "f724999c-d42f-4370-8828-a450ed584671",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:19:01.170Z"
+        },
+        {
+          "id": "0fff11ee-b51f-4ea7-8b57-640db47c4724",
+          "taskType": "diagnosis_identify",
+          "taskId": "51053caf-2257-47cc-94f9-871034df0577",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 9447,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": [
+              "rule:type:昆虫",
+              "rule:confidence:0.90",
+              "rule:score:57"
+            ]
+          },
+          "createdAt": "2026-04-04T18:19:00.529Z"
+        },
+        {
+          "id": "2c7a5452-6586-4cf6-8a94-9e967df4fdfd",
+          "taskType": "spirit_generation",
+          "taskId": "f724999c-d42f-4370-8828-a450ed584671",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T18:18:59.589Z"
+        },
+        {
+          "id": "f6aa0774-05bc-4b0c-b12b-3e407b339e0f",
+          "taskType": "diagnosis_identify",
+          "taskId": "51053caf-2257-47cc-94f9-871034df0577",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:18:45.058Z"
+        },
+        {
+          "id": "9748a643-e750-4b66-9fed-3b9461122b60",
+          "taskType": "diagnosis_identify",
+          "taskId": "51053caf-2257-47cc-94f9-871034df0577",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:18:45.024Z"
+        },
+        {
+          "id": "b344e850-cb32-4dd2-b510-82eb6456dfd3",
+          "taskType": "diagnosis_identify",
+          "taskId": "51053caf-2257-47cc-94f9-871034df0577",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:18:44.790Z"
+        },
+        {
+          "id": "d9767c28-df51-4393-a7b3-3f525408ae31",
+          "taskType": "diagnosis_identify",
+          "taskId": "51053caf-2257-47cc-94f9-871034df0577",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T18:18:44.727Z"
+        },
+        {
+          "id": "c6457c6b-79fe-47da-87ea-8d1224c4a4db",
+          "taskType": "spirit_generation",
+          "taskId": "f69d50de-d8e1-4b67-ab5f-6e304c5facde",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 101158,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T15:36:16.258Z"
+        },
+        {
+          "id": "2316a05f-de2d-4fe6-afca-55a1d812b720",
+          "taskType": "spirit_generation",
+          "taskId": "f69d50de-d8e1-4b67-ab5f-6e304c5facde",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T15:34:34.777Z"
+        },
+        {
+          "id": "ee86913b-4231-41d2-9835-992c7dfb138a",
+          "taskType": "spirit_generation",
+          "taskId": "f69d50de-d8e1-4b67-ab5f-6e304c5facde",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T15:34:34.595Z"
+        },
+        {
+          "id": "99f538af-ef2e-4fb6-915e-e77ce76987ee",
+          "taskType": "spirit_generation",
+          "taskId": "7d9afb08-66ce-484f-b70f-b8f9bcfed2a2",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 82460,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T14:03:49.522Z"
+        },
+        {
+          "id": "0e27ba4f-28ba-4d58-8a39-7dcc30f89c07",
+          "taskType": "spirit_generation",
+          "taskId": "7d9afb08-66ce-484f-b70f-b8f9bcfed2a2",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T14:02:26.642Z"
+        },
+        {
+          "id": "bc996801-097a-405b-a181-0e0d4af172a7",
+          "taskType": "spirit_generation",
+          "taskId": "7d9afb08-66ce-484f-b70f-b8f9bcfed2a2",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T14:02:26.287Z"
+        },
+        {
+          "id": "4e966a5a-1b52-4081-b7d9-e3a2d41c4f03",
+          "taskType": "diagnosis_identify",
+          "taskId": "d5ee197b-3c83-4eb4-ac10-15fe0f6ba125",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 6197,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": [
+              "rule:type:昆虫",
+              "rule:confidence:0.90",
+              "rule:score:57"
+            ]
+          },
+          "createdAt": "2026-04-04T14:02:23.465Z"
+        },
+        {
+          "id": "29785d24-7808-48f0-bec1-cec31d741f66",
+          "taskType": "diagnosis_identify",
+          "taskId": "d5ee197b-3c83-4eb4-ac10-15fe0f6ba125",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T14:02:19.323Z"
+        },
+        {
+          "id": "9dcd58f0-c993-4c02-9311-dc4198dbbf7c",
+          "taskType": "diagnosis_identify",
+          "taskId": "d5ee197b-3c83-4eb4-ac10-15fe0f6ba125",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T14:02:18.337Z"
+        },
+        {
+          "id": "352d42bc-1ae3-4938-8d6a-bc4d84996488",
+          "taskType": "diagnosis_identify",
+          "taskId": "d5ee197b-3c83-4eb4-ac10-15fe0f6ba125",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T14:02:18.313Z"
+        },
+        {
+          "id": "89c093ea-5979-4098-a1bd-37865a3e19e9",
+          "taskType": "diagnosis_identify",
+          "taskId": "d5ee197b-3c83-4eb4-ac10-15fe0f6ba125",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T14:02:17.545Z"
+        },
+        {
+          "id": "9396557a-c9e0-4eb8-87a2-fe978c5dd977",
+          "taskType": "spirit_generation",
+          "taskId": "e97f761b-e2ed-403f-9202-27f42e5acc85",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 265622,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T14:00:08.949Z"
+        },
+        {
+          "id": "efb7e64c-d1e3-4808-b943-f915d7eb1a49",
+          "taskType": "spirit_generation",
+          "taskId": "e97f761b-e2ed-403f-9202-27f42e5acc85",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T13:55:42.721Z"
+        },
+        {
+          "id": "4ca55061-1cac-4f8d-881b-6de00540f813",
+          "taskType": "spirit_generation",
+          "taskId": "e97f761b-e2ed-403f-9202-27f42e5acc85",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "nextRetryAt": "",
+            "idempotencyKey": ""
+          },
+          "createdAt": "2026-04-04T13:55:42.681Z"
+        },
+        {
+          "id": "469a2286-32be-4604-b47b-5e96166df637",
+          "taskType": "diagnosis_identify",
+          "taskId": "4e2cc0e9-7a96-4d86-b306-21ac0ede104f",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 6831,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": [
+              "rule:type:昆虫",
+              "rule:confidence:0.90",
+              "rule:score:57"
+            ]
+          },
+          "createdAt": "2026-04-04T13:54:07.977Z"
+        },
+        {
+          "id": "bcd55e4b-5016-4a98-a866-cd06f58cf78e",
+          "taskType": "diagnosis_identify",
+          "taskId": "4e2cc0e9-7a96-4d86-b306-21ac0ede104f",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T13:54:07.566Z"
+        },
+        {
+          "id": "72ed08ab-5b4e-4df1-b68f-fde0188bdf6f",
+          "taskType": "diagnosis_identify",
+          "taskId": "4e2cc0e9-7a96-4d86-b306-21ac0ede104f",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T13:54:06.619Z"
+        },
+        {
+          "id": "a8905d47-593b-4344-a7af-d5cdca5b7ce2",
+          "taskType": "diagnosis_identify",
+          "taskId": "4e2cc0e9-7a96-4d86-b306-21ac0ede104f",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T13:54:04.651Z"
+        },
+        {
+          "id": "b33c65d8-6960-46e3-b0fa-54e7621b8fdb",
+          "taskType": "diagnosis_identify",
+          "taskId": "4e2cc0e9-7a96-4d86-b306-21ac0ede104f",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T13:54:03.026Z"
+        },
+        {
+          "id": "707ae02c-101d-4ef8-b479-2616fa6f5525",
+          "taskType": "diagnosis_identify",
+          "taskId": "fe93707f-108f-49e1-a900-f98f3c51b6f9",
+          "status": "succeeded",
+          "attempt": 1,
+          "durationMs": 6361,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": [
+              "rule:type:昆虫",
+              "rule:confidence:0.90",
+              "rule:score:57"
+            ]
+          },
+          "createdAt": "2026-04-04T13:49:58.589Z"
+        },
+        {
+          "id": "c89f266a-e701-464c-a8dd-14dadd49e679",
+          "taskType": "diagnosis_identify",
+          "taskId": "fe93707f-108f-49e1-a900-f98f3c51b6f9",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T13:49:58.301Z"
+        },
+        {
+          "id": "74fe2cb8-c18d-4b65-b594-7b30fcf35335",
+          "taskType": "diagnosis_identify",
+          "taskId": "fe93707f-108f-49e1-a900-f98f3c51b6f9",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T13:49:58.267Z"
+        },
+        {
+          "id": "0b8ba20f-e0d5-4b8f-9432-efb9b31d4fa9",
+          "taskType": "diagnosis_identify",
+          "taskId": "fe93707f-108f-49e1-a900-f98f3c51b6f9",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T13:49:52.678Z"
+        },
+        {
+          "id": "92e9014d-a521-4961-9f70-5122e2662d49",
+          "taskType": "diagnosis_identify",
+          "taskId": "fe93707f-108f-49e1-a900-f98f3c51b6f9",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T13:49:51.235Z"
+        },
+        {
+          "id": "d188c9ee-0e75-4b68-aaf7-c0c04c84b03c",
+          "taskType": "diagnosis_identify",
+          "taskId": "b6b98a74-4d06-4b47-86cd-78b0dca56b83",
+          "status": "failed",
+          "attempt": 2,
+          "durationMs": 30071,
+          "error": "400 status code (no body)",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-04-04T13:41:02.328Z"
+        }
+      ],
+      "page": {
+        "limit": 100,
+        "offset": 0,
+        "hasMore": true,
+        "nextOffset": 100
+      }
+    },
+    "observability": {
+      "channels": [
+        {
+          "channel": "identify",
+          "count": 37
+        },
+        {
+          "channel": "generation",
+          "count": 35
+        },
+        {
+          "channel": "chat",
+          "count": 29
+        }
+      ],
+      "providers": [
+        {
+          "provider": "siliconflow",
+          "count": 29
+        }
+      ],
+      "models": [
+        {
+          "model": "deepseek-ai/DeepSeek-V3",
+          "count": 29
+        }
+      ],
+      "taskTypes": [
+        {
+          "taskType": "diagnosis_identify",
+          "count": 107
+        },
+        {
+          "taskType": "spirit_generation",
+          "count": 65
+        },
+        {
+          "taskType": "spirit_chat",
+          "count": 29
+        }
+      ],
+      "statuses": [
+        {
+          "status": "submitted",
+          "count": 72
+        },
+        {
+          "status": "queued",
+          "count": 38
+        },
+        {
+          "status": "done",
+          "count": 29
+        },
+        {
+          "status": "running",
+          "count": 24
+        },
+        {
+          "status": "succeeded",
+          "count": 23
+        },
+        {
+          "status": "pending",
+          "count": 13
+        },
+        {
+          "status": "failed",
+          "count": 2
+        }
+      ],
+      "errorCodes": [],
+      "latency": {
+        "samples": 0,
+        "averageMs": 0,
+        "maxMs": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap');
+@import "tailwindcss";
+
+:root {
+  --app-bg: #eef1ec;
+  --panel: #f7f7f6;
+  --card-soft: #f0f3ec;
+  --line: #e5e9df;
+  --accent: #cccb93;
+  --accent-deep: #5d8978;
+  --text-main: #111815;
+  --text-soft: #64726a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background:
+    radial-gradient(1200px 500px at 120% -20%, rgba(204, 203, 147, 0.33), transparent 65%),
+    radial-gradient(900px 460px at -10% 110%, rgba(93, 137, 120, 0.18), transparent 60%),
+    var(--app-bg);
+  color: var(--text-main);
+  font-family: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.material-symbol-filled {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.safe-top {
+  padding-top: max(10px, env(safe-area-inset-top));
+}
+
+.safe-bottom {
+  padding-bottom: max(8px, env(safe-area-inset-bottom));
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@keyframes spirit-tag-rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.spirit-tag-rise {
+  animation: spirit-tag-rise 260ms ease-out both;
+}
+
+@keyframes spirit-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spirit-shimmer {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+.spirit-loading-ring {
+  border: 2px solid rgba(93, 137, 120, 0.22);
+  border-top-color: rgba(93, 137, 120, 0.9);
+  border-radius: 999px;
+  display: inline-block;
+  animation: spirit-spin 800ms linear infinite;
+}
+
+.spirit-loading-shimmer {
+  background: linear-gradient(90deg, rgba(204, 203, 147, 0.35), rgba(93, 137, 120, 0.22), rgba(204, 203, 147, 0.35));
+  animation: spirit-shimmer 1.15s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .spirit-tag-rise,
+  .spirit-loading-ring,
+  .spirit-loading-shimmer {
+    animation: none;
+  }
+}
+
+
+:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 2px;
+}
+

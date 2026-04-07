@@ -1,0 +1,62 @@
+﻿[
+  {
+    "name": "番茄晚疫病",
+    "scientificName": "Phytophthora infestans",
+    "imagePath": "/images/encyclopedia/doc/doc-disease-01.png"
+  },
+  {
+    "name": "黄瓜白粉病",
+    "scientificName": "Erysiphe cichoracearum",
+    "imagePath": "/images/encyclopedia/doc/doc-disease-02.png"
+  },
+  {
+    "name": "柑橘溃疡病",
+    "scientificName": "Xanthomonas citri subsp. citri",
+    "imagePath": "/images/encyclopedia/doc/doc-disease-03.png"
+  },
+  {
+    "name": "茄子绵疫病",
+    "scientificName": "Phytophthora parasitica",
+    "imagePath": "/images/encyclopedia/doc/doc-disease-04.png"
+  },
+  {
+    "name": "小麦锈病（条锈病）",
+    "scientificName": "Puccinia striiformis f. sp. tritici",
+    "imagePath": "/images/encyclopedia/doc/doc-disease-05.png"
+  },
+  {
+    "name": "芹菜斑枯病（晚疫病）",
+    "scientificName": "Septoria apiicola",
+    "imagePath": "/images/encyclopedia/doc/doc-disease-06.png"
+  },
+  {
+    "name": "水稻纹枯病",
+    "scientificName": "Rhizoctonia solani",
+    "imagePath": "/images/encyclopedia/doc-2026/doc-disease-21.jpg"
+  },
+  {
+    "name": "马铃薯早疫病",
+    "scientificName": "Alternaria solani",
+    "imagePath": "/images/encyclopedia/doc-2026/doc-disease-22.jpg"
+  },
+  {
+    "name": "辣椒炭疽病",
+    "scientificName": "Colletotrichum capsici",
+    "imagePath": "/images/encyclopedia/doc-2026/doc-disease-23.jpg"
+  },
+  {
+    "name": "黄瓜霜霉病",
+    "scientificName": "Pseudoperonospora cubensis",
+    "imagePath": "/images/encyclopedia/doc-2026/doc-disease-24.jpg"
+  },
+  {
+    "name": "葡萄霜霉病",
+    "scientificName": "Plasmopara viticola",
+    "imagePath": "/images/encyclopedia/doc-2026/doc-disease-25.jpg"
+  },
+  {
+    "name": "白菜软腐病",
+    "scientificName": "Erwinia carotovora subsp. carotovora",
+    "imagePath": "/images/encyclopedia/doc-2026/doc-disease-26.png"
+  }
+]

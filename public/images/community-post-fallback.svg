@@ -1,0 +1,22 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="社区帖子占位图">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7f0df" />
+      <stop offset="100%" stop-color="#c8ddc0" />
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.55" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="760" fill="url(#bg)" />
+  <circle cx="140" cy="110" r="78" fill="#d4e6cb" />
+  <circle cx="1020" cy="660" r="120" fill="#bad4b1" />
+
+  <rect x="220" y="160" width="760" height="440" rx="34" fill="url(#card)" stroke="#97b48f" stroke-width="6" />
+  <path d="M300 510 L470 350 L620 470 L730 390 L890 540" fill="none" stroke="#6f9a73" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="430" cy="290" r="56" fill="#88af88" />
+
+  <text x="300" y="654" fill="#315b42" font-family="'Noto Sans SC', sans-serif" font-size="42" font-weight="700">图片加载中断，已使用社区占位图</text>
+</svg>

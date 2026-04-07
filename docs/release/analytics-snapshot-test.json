@@ -1,0 +1,197 @@
+{
+  "exportedAt": "2026-03-31T14:44:59.857Z",
+  "apiBase": "http://127.0.0.1:8787",
+  "endpoint": "http://127.0.0.1:8787/api/analytics/export?days=7&limit=2000&taskLimit=100&taskOffset=0",
+  "snapshot": {
+    "generatedAt": "2026-03-31T14:44:59.838Z",
+    "query": {
+      "days": 7,
+      "limit": 2000,
+      "source": "",
+      "eventName": "",
+      "taskLimit": 100,
+      "taskOffset": 0,
+      "taskType": "",
+      "status": "",
+      "taskId": ""
+    },
+    "eventsSummary": {
+      "days": 7,
+      "total": 2,
+      "byName": [
+        {
+          "name": "identify_submit",
+          "count": 1
+        },
+        {
+          "name": "community_post_publish",
+          "count": 1
+        }
+      ],
+      "bySource": [
+        {
+          "source": "api",
+          "count": 2
+        }
+      ],
+      "generatedAt": "2026-03-31T14:44:59.835Z"
+    },
+    "taskLogs": {
+      "items": [
+        {
+          "id": "c8d7ce33-2ad1-4319-9557-a5ea200a346a",
+          "taskType": "diagnosis_identify",
+          "taskId": "7888eebd-3e42-43ca-8a4f-5aa642c25304",
+          "status": "pending",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-03-30T17:01:14.141Z"
+        },
+        {
+          "id": "027a1cac-7487-48cb-8b08-74564ba20724",
+          "taskType": "diagnosis_identify",
+          "taskId": "7888eebd-3e42-43ca-8a4f-5aa642c25304",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-03-30T17:01:09.792Z"
+        },
+        {
+          "id": "478b0884-6e19-4cc0-b394-0cb16d38dcfb",
+          "taskType": "diagnosis_identify",
+          "taskId": "7888eebd-3e42-43ca-8a4f-5aa642c25304",
+          "status": "running",
+          "attempt": 2,
+          "durationMs": 0,
+          "error": "400 status code (no body)",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-03-30T17:01:09.284Z"
+        },
+        {
+          "id": "a1eecf6c-f131-46ca-a4fa-555b18072ad1",
+          "taskType": "diagnosis_identify",
+          "taskId": "7888eebd-3e42-43ca-8a4f-5aa642c25304",
+          "status": "running",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-03-30T17:01:08.919Z"
+        },
+        {
+          "id": "8fbf90dc-0651-4581-ab16-1ec91ee2e9f3",
+          "taskType": "diagnosis_identify",
+          "taskId": "7888eebd-3e42-43ca-8a4f-5aa642c25304",
+          "status": "queued",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "400 status code (no body)",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-03-30T17:01:08.720Z"
+        },
+        {
+          "id": "75b09f30-c8a1-47fa-9e57-65a78b145c4d",
+          "taskType": "diagnosis_identify",
+          "taskId": "7888eebd-3e42-43ca-8a4f-5aa642c25304",
+          "status": "failed",
+          "attempt": 2,
+          "durationMs": 131,
+          "error": "400 status code (no body)",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-03-30T17:01:08.685Z"
+        },
+        {
+          "id": "4738d0cf-98b8-4540-aa37-103a17c49075",
+          "taskType": "diagnosis_identify",
+          "taskId": "7888eebd-3e42-43ca-8a4f-5aa642c25304",
+          "status": "queued",
+          "attempt": 0,
+          "durationMs": 0,
+          "error": "",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-03-30T17:01:08.565Z"
+        },
+        {
+          "id": "0a2c62bb-71bc-4f13-b740-8ad56ff5936e",
+          "taskType": "diagnosis_identify",
+          "taskId": "7888eebd-3e42-43ca-8a4f-5aa642c25304",
+          "status": "queued",
+          "attempt": 1,
+          "durationMs": 0,
+          "error": "400 status code (no body)",
+          "payload": {
+            "riskLevel": "medium",
+            "sourceRefs": []
+          },
+          "createdAt": "2026-03-30T17:01:07.873Z"
+        }
+      ],
+      "page": {
+        "limit": 100,
+        "offset": 0,
+        "hasMore": false,
+        "nextOffset": null
+      }
+    },
+    "observability": {
+      "channels": [],
+      "providers": [],
+      "models": [],
+      "taskTypes": [
+        {
+          "taskType": "diagnosis_identify",
+          "count": 8
+        }
+      ],
+      "statuses": [
+        {
+          "status": "queued",
+          "count": 4
+        },
+        {
+          "status": "running",
+          "count": 2
+        },
+        {
+          "status": "pending",
+          "count": 1
+        },
+        {
+          "status": "failed",
+          "count": 1
+        }
+      ],
+      "errorCodes": [],
+      "latency": {
+        "samples": 0,
+        "averageMs": 0,
+        "maxMs": 0
+      }
+    }
+  }
+}

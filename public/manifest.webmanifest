@@ -1,0 +1,19 @@
+﻿{
+  "name": "四季夏木",
+  "short_name": "四季夏木",
+  "description": "校园植保社区与图鉴应用",
+  "theme_color": "#cccb93",
+  "background_color": "#eef1ec",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/images/711d717f9bc3af89d56a4b69ad7579d4.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
