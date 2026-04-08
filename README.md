@@ -1,100 +1,114 @@
-# 四季夏木全栈应用（summer-wood-app）
+# 四季夏木（Summer Wood App）
 
-当前项目已升级为前后端一体：
+“四季夏木”是一个面向校园植物保护与健康治理的智能社区应用，围绕“识别问题 -> 获取建议 -> 行动执行 -> 社区共建 -> 知识回流”形成闭环，支持答辩演示、工程交付与后续产品化迭代。
 
-- 前端：React + Vite + TypeScript（移动端 H5）
-- 后端：Node HTTP API（`server/`）
-- 数据库：Supabase（Postgres）
+## 1. 应用详细介绍
 
-## 目录概览
+### 1.1 项目定位
+- 面向对象：校园园艺社团、后勤绿化人员、普通师生用户。
+- 核心价值：降低植物病虫害识别门槛，提升处置效率，沉淀可复用的校园植物治理知识。
+- 业务闭环：用户识别和提问 -> 系统给出分级建议与图鉴证据 -> 用户在社区记录与交流 -> 高质量内容回流知识库。
 
-- `src/`：前端页面与业务逻辑
-- `server/`：后端 API
-- `supabase/schema.sql`：数据库建表与索引
-- `supabase/seed.sql`：基础种子数据
+### 1.2 典型使用路径
+1. 用户上传植物异常图片，发起识别任务。
+2. 系统返回风险等级、行动卡片、图鉴条目和建议处置方案。
+3. 用户进入“灵化助手”对话，获取更易理解的执行建议。
+4. 一键生成社区草稿并发布，沉淀现场经验。
+5. 运维或管理员对社区内容进行知识回流审核，将高质量经验入库。
 
-## 一次性初始化
+### 1.3 P17/P18 已落地能力（答辩关键）
+- P17 社区知识回流治理二期：
+  - 审核记录（reviews）
+  - 回滚（rollback）
+  - 冲突处理（conflict strategy）
+  - 质量评分与来源追踪
+- P18 发布冻结与交付包：
+  - 一键彩排脚本
+  - 运维手册
+  - 验收清单
+  - 回滚方案
 
-1. 在 Supabase SQL Editor 执行：
-   - `supabase/schema.sql`
-   - `supabase/seed.sql`
-2. 复制 `.env.example` 为 `.env` 并填写（`npm run dev:api` 会自动读取 `.env`）：
-   - `SUPABASE_URL`
-   - `SUPABASE_SERVICE_ROLE_KEY`
+## 2. 功能介绍
 
-> `SUPABASE_SERVICE_ROLE_KEY` 仅供后端使用，不要暴露到前端。
+### 2.1 用户侧功能
+- 智能识别：病虫害识别任务化执行，支持状态轮询与失败兜底。
+- 图鉴检索：按关键词、分类检索病虫害知识，查看证据来源和处置模板。
+- 社区互动：发帖、回帖、搜索、楼层化讨论。
+- 灵化助手：结合识别结果与知识库上下文生成可执行建议。
+- 草稿发布链路：识别/对话内容一键转为社区草稿并发布。
 
-## 本地开发
+### 2.2 管理与治理功能
+- 回流候选池：社区内容抽取为候选知识项。
+- 审核流：候选 -> 审核 -> 入库，支持审批、驳回、回滚。
+- 审计追踪：记录每次审核动作、操作者、备注与前后状态。
+- 冲突治理：当知识冲突时，支持 `overwrite / merge / keep_existing` 策略。
 
-前端：
+### 2.3 交付与演示功能
+- 一键演示链路验证：`verify:final-demo`。
+- 一键发布彩排：`rehearse:p18`（可起 API + Web + 核验并输出报告）。
+- 离线兜底模式：外部依赖不可用时，仍可完整演示关键流程。
+
+## 3. 技术要点介绍
+
+### 3.1 技术栈
+- 前端：React + Vite + TypeScript
+- 后端：Node.js（原生 HTTP API）
+- 数据层：Supabase（Postgres + RLS）
+- 测试：Vitest（前后端契约与回归测试）
+
+### 3.2 架构与工程设计
+- 前后端分层清晰：
+  - `src/`：前端页面、组件、状态管理、API 客户端
+  - `server/`：API 路由、领域服务、数据访问
+  - `supabase/`：库表结构、初始化与修复脚本
+- API 编排与可观测：
+  - 关键流程均有契约测试覆盖
+  - 演示链路可脚本化复现并输出 JSON 验收报告
+- 治理能力内建：
+  - 回流候选、审核记录、回滚恢复、冲突决策
+  - 审核动作可追溯来源与变更轨迹
+
+### 3.3 稳定性与发布策略
+- 支持 `real` 与 `offline` 双模式，降低外部依赖风险。
+- 发布前通过：
+  - `npm run test:api`
+  - `npm run build`
+  - `npm run rehearse:p18 -- --mode offline`
+- 提供运维手册与回滚方案，满足“可演示、可交付、可恢复”。
+
+## 4. 本地运行
 
 ```bash
-cd D:\yeoooo\summer-wood-app
 npm install
 npm run dev
 ```
 
-后端（新终端）：
+新终端启动后端：
 
 ```bash
-cd D:\yeoooo\summer-wood-app
 npm run dev:api
 ```
 
-默认联通方式：
-
-- 前端请求 `/api/*`
-- Vite 代理到 `http://127.0.0.1:8787`
-
-## 主要后端接口
-
-- `GET /api/health`
-- `GET /api/encyclopedia?q=`
-- `GET /api/community/posts?q=`
-- `POST /api/community/posts`
-- `POST /api/community/posts/:id/replies`
-
-## 测试命令
+常用校验：
 
 ```bash
 npm run test:api
-npm run test:run
+npm run build
+npm run verify:final-demo -- --mode offline
+npm run rehearse:p18 -- --mode offline --skip-build --skip-comfyui
 ```
 
-## 当前保留策略
+## 5. 打包 App 准备（PakePlus）
 
-- 登录/注册/找回密码仍沿用前端本地逻辑。
-- 图鉴与社区云端读写已接入后端 + Supabase。
-## 修复图鉴错误照片（Supabase）
+面向 `https://pakeplus.com/zh/` 打包前建议：
 
-1. 先确认 `.env` 中的 `SUPABASE_SERVICE_ROLE_KEY` 是 **service_role(secret) key**（通常以 `sb_secret_` 开头）。
-2. 执行以下任一方式：
+1. 先确定可稳定访问的前端入口（本地演示或公网部署地址）。
+2. 确保 API 地址可被打包后的 App 访问（同机/内网/公网）。
+3. 先跑一遍 `rehearse:p18`，确认演示链路通过后再打包。
+4. 打包时优先使用已验证的离线兜底展示路径，确保现场稳定。
 
-方式 A（推荐，脚本自动执行）：
-
-```bash
-npm run db:fix:photos
-```
-
-方式 B（SQL Editor 手动执行）：
-
-- 在 Supabase SQL Editor 执行 `supabase/fix-encyclopedia-photos.sql`。
-
-修复结果：
-
-- 删除分类 `天敌益虫`
-- 将图鉴随机错误图（`loremflickr`）批量替换为稳定虫害/病害图片
-
-## 灵化鉴别模式（离线演示 + 真实 API 预留）
-
-默认离线演示：
-
-- VITE_SPIRIT_IDENTIFY_MODE=mock
-- 智能鉴别固定返回“瓢虫”，用于现场演示稳定性。
-
-后续接入真实鉴别 API：
-
-- VITE_SPIRIT_IDENTIFY_MODE=remote
-- VITE_SPIRIT_IDENTIFY_ENDPOINT=https://your-api/identify
-
-前端已内置自动降级：当远端接口失败时，会回退到离线瓢虫演示结果。
+## 6. 相关文档
+- 运维手册：`docs/runbooks/p18-ops-manual.md`
+- 验收清单：`docs/release/p18-acceptance-checklist.md`
+- 回滚方案：`docs/release/p18-rollback-plan.md`
+- 彩排报告：`docs/release/p18-rehearsal-latest.json`
