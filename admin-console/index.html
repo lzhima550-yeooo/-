@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>四季夏木 · 后台管理（一期最小版）</title>
+    <link rel="stylesheet" href="./admin.css" />
+  </head>
+  <body>
+    <div class="admin-shell">
+      <aside class="admin-sidebar">
+        <div class="brand">
+          <div class="brand-mark">夏</div>
+          <div>
+            <h1>四季夏木后台</h1>
+            <p>Phase-1 Minimal Admin</p>
+          </div>
+        </div>
+        <nav class="nav-list">
+          <button type="button" class="nav-item is-active" data-view="overview">运行总览</button>
+          <button type="button" class="nav-item" data-view="content">社区巡检</button>
+          <button type="button" class="nav-item" data-view="backflow">知识回流</button>
+        </nav>
+        <section class="session-card">
+          <h2>当前会话</h2>
+          <p id="session-user">未登录</p>
+          <p id="session-role" class="muted">-</p>
+          <button id="logout-btn" type="button" class="ghost-btn">退出登录</button>
+        </section>
+        <section class="audit-card">
+          <h2>本地操作审计</h2>
+          <ul id="audit-log" class="audit-log"></ul>
+        </section>
+      </aside>
+
+      <main class="admin-main">
+        <header class="topbar">
+          <div>
+            <h2 id="view-title">运行总览</h2>
+            <p class="muted" id="view-subtitle">查看系统健康、任务状态与关键指标。</p>
+          </div>
+          <div class="api-config">
+            <label for="api-base-input">API Base</label>
+            <input id="api-base-input" type="text" />
+            <button type="button" id="api-base-save-btn">保存</button>
+          </div>
+        </header>
+
+        <section class="status-strip">
+          <span id="status-text">系统就绪</span>
+        </section>
+
+        <section id="view-overview" class="view-panel is-visible">
+          <div class="cards-grid">
+            <article class="metric-card">
+              <h3>API 健康</h3>
+              <p id="health-value" class="metric">-</p>
+              <p id="health-sub" class="muted">待检测</p>
+            </article>
+            <article class="metric-card">
+              <h3>生图引擎</h3>
+              <p id="runtime-value" class="metric">-</p>
+              <p id="runtime-sub" class="muted">待检测</p>
+            </article>
+            <article class="metric-card">
+              <h3>回流候选</h3>
+              <p id="candidate-value" class="metric">-</p>
+              <p id="candidate-sub" class="muted">待检测</p>
+            </article>
+            <article class="metric-card">
+              <h3>社区帖子</h3>
+              <p id="posts-value" class="metric">-</p>
+              <p id="posts-sub" class="muted">待检测</p>
+            </article>
+          </div>
+          <div class="panel-actions">
+            <button id="refresh-overview-btn" type="button">刷新总览</button>
+          </div>
+        </section>
+
+        <section id="view-content" class="view-panel">
+          <div class="toolbar">
+            <input id="content-search-input" type="text" placeholder="搜索帖子标题/正文关键字" />
+            <button id="content-search-btn" type="button">查询</button>
+            <button id="content-refresh-btn" type="button" class="ghost-btn">重载</button>
+          </div>
+          <div class="split-layout">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>标题</th>
+                    <th>状态</th>
+                    <th>作者</th>
+                    <th>时间</th>
+                    <th>回复数</th>
+                  </tr>
+                </thead>
+                <tbody id="content-table-body"></tbody>
+              </table>
+            </div>
+            <aside class="detail-card">
+              <h3>帖子详情</h3>
+              <div id="content-detail" class="detail-body">请选择左侧帖子查看详情。</div>
+            </aside>
+          </div>
+        </section>
+
+        <section id="view-backflow" class="view-panel">
+          <div class="toolbar">
+            <select id="bf-status-select">
+              <option value="">状态（全部）</option>
+              <option value="pending">pending</option>
+              <option value="approved">approved</option>
+              <option value="rejected">rejected</option>
+            </select>
+            <select id="bf-type-select">
+              <option value="">类型（全部）</option>
+              <option value="source_index">source_index</option>
+              <option value="treatment_template">treatment_template</option>
+            </select>
+            <select id="bf-lifecycle-select">
+              <option value="">生命周期（全部）</option>
+              <option value="conflicted">conflicted</option>
+              <option value="rejected">rejected</option>
+              <option value="rolled_back">rolled_back</option>
+            </select>
+            <button id="bf-refresh-btn" type="button">刷新候选</button>
+          </div>
+
+          <div class="split-layout">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>候选ID</th>
+                    <th>类型</th>
+                    <th>质量分</th>
+                    <th>状态</th>
+                    <th>生命周期</th>
+                  </tr>
+                </thead>
+                <tbody id="bf-table-body"></tbody>
+              </table>
+            </div>
+            <aside class="detail-card">
+              <h3>候选详情与操作</h3>
+              <div id="bf-detail" class="detail-body">请选择左侧候选查看详情。</div>
+              <div class="action-form">
+                <label for="action-note-input">审核备注</label>
+                <textarea id="action-note-input" rows="3" placeholder="填写本次审核说明"></textarea>
+                <div class="action-row">
+                  <input id="action-entry-input" type="text" placeholder="entryId（可选）" />
+                  <select id="action-conflict-select">
+                    <option value="">冲突策略（默认）</option>
+                    <option value="overwrite">overwrite</option>
+                    <option value="merge">merge</option>
+                    <option value="keep_existing">keep_existing</option>
+                  </select>
+                </div>
+                <div class="action-row">
+                  <button id="approve-btn" type="button">通过</button>
+                  <button id="reject-btn" type="button" class="warn-btn">驳回</button>
+                  <button id="rollback-btn" type="button" class="ghost-btn">回滚</button>
+                </div>
+              </div>
+              <div class="reviews-wrap">
+                <h4>审核记录</h4>
+                <ul id="bf-reviews" class="review-list"></ul>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="login-modal" class="modal is-visible">
+      <div class="modal-card">
+        <h3>后台登录</h3>
+        <p class="muted">一期最小版为本地账号认证（仅用于演示与管理入口保护）。</p>
+        <label for="login-account">账号</label>
+        <input id="login-account" type="text" placeholder="superadmin" />
+        <label for="login-password">密码</label>
+        <input id="login-password" type="password" placeholder="请输入密码" />
+        <button id="login-btn" type="button">登录</button>
+        <p class="muted small">演示账号：superadmin / admin123</p>
+      </div>
+    </div>
+
+    <script type="module" src="./admin.js"></script>
+  </body>
+</html>
